@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <title>Do you love me  ? </title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="copyright" content="http://www.javascriptbank.com" />
+    <script type="text/javascript">
+        flag=1
+        function f1()
+        {
+            alert("Yes. you are right ")
+        }
+        function f()
+        {
+            if(flag==1)
+            {
+                Bn.style.top=90
+                Bn.style.left=500
+                flag=2
+            }
+            else if(flag==2)
+            {
+                Bn.style.top=90
+                Bn.style.left=50
+                flag=3
+            }
+            else if(flag==3)
+            {
+                Bn.style.top=235
+                Bn.style.left=360
+                flag=4
+            }
+            else if(flag==4)
+            {
+                Bn.style.top=290
+                Bn.style.left=120
+                flag=1
+            }
+            /*   let rd = new Math.random();   // khai báo 1 đối tượng Random
+              let  number = rd.next();
+              let i;
+              //let n= Math.random();
+              for( i=1;i <= number ;i++) {
+                  Bn.style.top= Math.random()*100;
+                  Bn.style.left= Math.random()*100;
+                  flag = i;
+              } */
+        }
+    </script>
+</head>
+<body>
+<h1 style="position:absolute; left:220px; top:175px; width:auto; height:210px;">Do you love me?</h1>
+<div id="By" style="position:absolute; left:285px; top:235px; width:210px;
+height:210px;">
+    <input type="button" value=" YES " onclick="f1(undefined)" />
+</div>
+<div ID="Bn" style="position:absolute; left:360px; top:235px; width:210px; height:210px;">
+    <input type="button" value=" NO " onmouseover="f(undefined)" />
+</div>
+</BODY>
+</html>
